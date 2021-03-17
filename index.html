@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HiQ_code_test</title>
+  <!--remove and add to css file-->
+  <style>
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      background-color:#738678;
+    }
+    
+    #game-board {
+      background-color: white;
+      width: 150vmin;
+      height: 100vmin;
+      display: grid;
+      grid-template-rows: repeat(21, 1fr);
+      grid-template-columns: repeat(21, 1fr);
+    }
+
+    .car {
+      background-color: #738678;
+      border-radius: 20px;
+      height: 25px;
+      width: 25px;
+      
+    }
+.info{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-right: 5px;
+}
+   
+  </style>
+  
+  <script src="game.js" defer type="module"></script>
+</head>
+<body>
+  <div class="info"><p>to run the car enter following</p>
+    <p>"f" to go up</p>
+    <p>"b" to go down</p>
+    <p>"l" to go left</p>
+    <p>"r" to go right</p>
+    
+    </div>
+<div></div>
+  <div id="game-board"></div>
+</body>
+</html>
